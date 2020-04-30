@@ -1,0 +1,68 @@
+title: My site
+subtitle: Just some words
+author: George Washington
+description: >
+  Here is my website. This description will appear in the meta
+  data on the site and in the feed.xml site description.
+repository: jasongaylord/SpaacedOut
+
+# pagination and permalink
+paginate: 5
+page_group_size: 5
+paginate_path: "/blog/page/:num"
+permalink: /blog/:year/:month/:day/:title
+
+# contact
+contact: 
+#  email: email@gmail.com # Uncomment if you want feedback via email (it will expose your email)
+#  url: https://domain.com/contact.html # Uncomment if you want to provide a contact form
+
+# social links (uncomment the links you'd like to include and)
+#twitter_username: jekyllrb
+#github_username: jekyll
+#facebook_username: jekyll
+#linkedin_username: jekyll
+#instagram_username: jekyll
+#medium_username: jekyll
+#youtube_username: jekyll
+#pinterest_username: jekyll
+#flickr_username: jekyll
+#stackoverflow_userid: 12345
+#stackoverflow_username: jekyll
+
+# feed
+rss: rss
+# The site generates a feed at /feed.xml. Uncomment below to override
+# feed:
+#   path: /myfeed.xml
+
+# comments
+comments:
+  enabled: false
+  show_count: false
+  # disqus_shortname: jekyll
+
+# front matter
+defaults:
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: post
+      comments: true
+  -
+    scope:
+      path: "pages"
+      type: "pages"
+    values:
+      layout: page
+      comments: false
+
+plugins:
+  - jekyll-avatar
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap

@@ -36,10 +36,13 @@ header {
         color: $color-white;
         text-shadow: 0.15rem 0.15rem #000;
         z-index: 6;
+        position: relative;
     }
 
     .site-subtitle {
         color: $color-lightgrey;
         z-index: 8;
+        position: relative;
+        margin: 15px 0;
     }
 }

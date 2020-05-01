@@ -16,7 +16,8 @@ header {
       max-width: 285px;
     }
 
-    h2 {
-        color: #fff;
+    .site-title {
+        color: $color-white;
+        text-shadow: 0.15rem 0.15rem #000;
     }
 }

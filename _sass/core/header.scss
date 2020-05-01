@@ -46,6 +46,43 @@ header {
         margin: 25px 0;
     }
 
+    .site-nav {
+        font-family: $font-sans;
+        line-height: $size-standard-line-height * $size-standard-font;
+      
+        ul {
+          list-style-type: none;
+          margin-left: 0;
+          padding-top: 10%;
+      
+          li {
+            @include relative-font-size(1.3);
+            @include relative-font-weight(.7);
+            color: $color-lightgrey;
+            line-height: $size-standard-line-height;
+            text-transform: lowercase;
+      
+            a {
+              color: $color-lightgrey;
+      
+              &:hover {
+                text-decoration: none;
+                color: $color-purple;
+                transition: color $transition-time;
+              }
+            }
+      
+            &.current-page {
+              background: $color-header-background-active;
+              color: $color-orange;
+              margin-left: -5px;
+              padding-left: 5px;
+              width: $sidebar-width;
+            }
+          }
+        }
+      }
+
     .social-links {
         bottom: 0;
         height: 80px;
@@ -64,7 +101,7 @@ header {
             display: flex;
             justify-content: space-between;
             list-style-type: none;
-            margin: 20px 0;
+            margin: 20px 10px;
             padding-left: 0;
 
             li {
@@ -74,7 +111,7 @@ header {
 
                 a {
                     color: $color-white;
-                    font-size: 3em;
+                    font-size: 2em;
 
                     &:hover {
                         color: $color-purple;

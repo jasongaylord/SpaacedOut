@@ -56,8 +56,8 @@ header {
           padding-top: 10%;
       
           li {
-            @include relative-font-size(1.3);
-            @include relative-font-weight(.7);
+            font-size: 1.3em;
+            font-weight: 700;
             color: $color-lightgrey;
             line-height: $size-standard-line-height;
             text-transform: lowercase;

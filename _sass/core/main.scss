@@ -1,0 +1,7 @@
+main.page-content {
+    @media screen and (min-width: $media-breakpoint-md-min) {
+      max-width: calc(100% - #{$size-about-pane});
+      margin-left: $size-about-pane;
+      width: 100%;
+    }
+}

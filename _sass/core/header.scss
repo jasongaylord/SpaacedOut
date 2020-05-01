@@ -1,0 +1,22 @@
+header {
+    background-color: $color-header-background;
+    display: flex;
+    height: 100vh;
+    padding-bottom: 15vh;
+    min-width: $size-about-pane;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width: $media-breakpoint-sm-max) {
+      height: auto;
+      padding: 10vh 0;
+    }
+    @media screen and (min-width: $media-breakpoint-md-min) {
+      position: fixed;
+      max-width: 285px;
+    }
+
+    h2 {
+        color: #fff;
+    }
+}

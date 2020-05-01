@@ -1,5 +1,11 @@
-<div>Foo Bar</div>
 <ul class="social-media-list">
-    Site Twitter: {{ site.social.twitter | '' }}
-    Twitter: {{ social.twitter | '' }}
+    {% if site.social.facebook %}<li><a href="https://www.facebook.com/{{ site.social.facebook | cgi_escape | escape }}" target="_blank"><i class="fab fa-facebook"></i></a></li>{% endif %}
+    {% if site.social.github %}<li><a href="https://github.com/{{ site.social.github | cgi_escape | escape }}" target="_blank"><i class="fab fa-github"></i></a></li>{% endif %}
+    {% if site.social.instagram %}<li><a href="https://instagram.com/{{ site.social.instagram | cgi_escape | escape }}" target="_blank"><i class="fab fa-instagram"></i></a></li>{% endif %}
+    {% if site.social.linkedin %}<li><a href="https://www.linkedin.com/in/{{ site.social.linkedin | cgi_escape | escape }}" target="_blank"><i class="fab fa-linkedin"></i></a></li>{% endif %}
+    {% if site.social.pinterest %}<li><a href="https://www.pinterest.com/{{ site.social.pinterest | cgi_escape | escape }}" target="_blank"><i class="fab fa-pinterest"></i></a></li>{% endif %}
+    {% if site.social.stackoverflow %}<li><a href="https://stackoverflow.com/users/{{ site.social.stackoverflow | cgi_escape | escape }}/" target="_blank"><i class="fab fa-stack-overflow"></i></a></li>{% endif %}
+    {% if site.social.twitter %}<li><a href="https://twitter.com/{{ site.social.twitter | cgi_escape | escape }}" target="_blank"><i class="fab fa-twitter"></i></a></li>{% endif %}
+    {% if site.social.youtube %}<li><a href="https://youtube.com/{{ site.social.youtube | cgi_escape | escape }}" target="_blank"><i class="fab fa-youtube"></i></a></li>{% endif %}
+    {% if site.rss %}<li><a href="{{ site.feed.url | "/feed.xml" }}" target="_blank"><i class="fab fa-rss"></i></a></li>{% endif %}
 </ul>

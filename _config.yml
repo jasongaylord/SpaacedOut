@@ -18,6 +18,7 @@ contact:
 #  url: https://domain.com/contact.html # Uncomment if you want to provide a contact form
 
 # social links (uncomment the links you'd like to include and)
+#google_analytics: 123456
 #twitter_username: jekyllrb
 #github_username: jekyll
 #facebook_username: jekyll

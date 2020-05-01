@@ -17,6 +17,7 @@ header {
     }
 
     .site-title {
+        font-family: $font-site-title;
         color: $color-white;
         text-shadow: 0.15rem 0.15rem #000;
     }

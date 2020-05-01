@@ -1,5 +1,6 @@
 header {
     background-color: $color-header-background!important;
+    font-family: $font-sans;
     position: fixed;
     top: 0;
     z-index: 2;
@@ -47,23 +48,23 @@ header {
     }
 
     .site-nav {
-        font-family: $font-sans;
         line-height: $size-standard-line-height * 1.2;
       
         ul {
           list-style-type: none;
           margin-left: 0;
           padding-top: 10%;
+          padding-left: 0;
       
           li {
             font-size: 1.3em;
             font-weight: 700;
-            color: $color-lightgrey;
             line-height: $size-standard-line-height;
             text-transform: lowercase;
+            padding: 10px 0;
       
             a {
-              color: $color-lightgrey;
+              color: $color-white;
       
               &:hover {
                 text-decoration: none;
@@ -78,6 +79,10 @@ header {
               margin-left: -5px;
               padding-left: 5px;
               width: $size-about-pane;
+
+              a, a:hover {
+                color: $color-orange;
+              }
             }
           }
         }

@@ -16,8 +16,13 @@ header {
       max-width: 285px;
     }
 
+    a, a:active, a:hover, a:visited {
+        text-decoration: none;
+    }
+
     .site-title {
         font-family: $font-site-title;
+        font-size: $size-standard-font*1.4;
         color: $color-white;
         text-shadow: 0.15rem 0.15rem #000;
     }

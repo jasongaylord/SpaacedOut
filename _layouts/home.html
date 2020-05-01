@@ -1,0 +1,35 @@
+<div class="home">
+    {% if page.title %}
+    <h1 class="page-heading">{{ page.title }}</h1>
+    {% endif %}
+  
+    {{ content }}
+  
+    {% if site.posts.size > 0 %}
+      <div class="posts-list">
+        {% for post in paginator.posts %}
+        {% unless post.redirect %}
+        <header class="post-header">
+          <h1 class="post-title p-name" itemprop="name headline"><a href="{{ post.url }}">{{ post.title | escape }}</a></h1>
+          {% include post/meta.html %}
+        </header>
+      
+        <div class="post-content e-content" itemprop="articleBody">
+          {% if site.show_excerpts %}
+            <div class="excerpt">
+              {% if post.excerpt_image %}
+              <img src="{{post.excerpt_image }}" />
+              {% endif %}
+              {{ post.excerpt }}
+              <a href="{{ post.url }}" class="read-more">Read More</a>
+            </div>
+          {% else %}
+            {{ post.content }}
+          {% endif %}
+        </div>
+        {% endunless %}
+        {% endfor %}
+      </div>
+      {% include pagination.html %}
+    {% endif %}
+  </div>

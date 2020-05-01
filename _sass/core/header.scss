@@ -20,6 +20,13 @@ header {
         text-decoration: none;
     }
 
+    .site-avatar {
+        margin-bottom: 20px;
+        @media screen and (max-width: $media-breakpoint-sm-max) {
+            display: none;
+        }
+    }
+
     .site-title {
         font-family: $font-site-title;
         font-size: $size-standard-font*1.4;

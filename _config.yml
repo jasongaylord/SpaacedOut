@@ -23,20 +23,35 @@ contact:
 #  url: https://domain.com/contact.html # Uncomment if you want to provide a contact form
 
 # social links (uncomment the links you'd like to include and)
-#google_analytics: 123456
-#twitter_username: jekyllrb
-#github_username: jekyll
-#facebook_username: jekyll
-#linkedin_username: jekyll
-#instagram_username: jekyll
-#medium_username: jekyll
-#youtube_username: jekyll
-#pinterest_username: jekyll
-#flickr_username: jekyll
-#stackoverflow_userid: 12345
-#stackoverflow_username: jekyll
+social:
+#  twitter: jekyllrb
+#  github: jekyll
+#  stackoverflow: "11111"
+#  dribble: jekyll
+#  facebook: jekyll
+#  flickr: jekyll
+#  instagram: jekyll
+#  linkedin: jekyll
+#  pinterest: jekyll
+#  telegram: jekyll
+#  microdotblog: jekyll
+#  keybase: jekyll
+#  mastodon:
+#   - username: jekyll
+#     instance: example.com
+#   - username: jekyll2
+#     instance: example.com
+#  gitlab:
+#   - username: jekyll
+#     instance: example.com
+#   - username: jekyll2
+#     instance: example.com
+#  youtube: jekyll
+#  youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+#  youtube_channel_name: CloudCannon
 
-# feed
+#  google_analytics: UA-NNNNNNNN-N
+
 rss: rss
 # The site generates a feed at /feed.xml. Uncomment below to override
 # feed:

@@ -23,7 +23,7 @@ video {
 
 a {
     color: $color-link;
-    transition: color 0.3s;
+    transition: color $transition-time;
     &:hover {
         color: $color-link-hover;
     }

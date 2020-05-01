@@ -61,7 +61,6 @@ defaults:
       comments: false
 
 plugins:
-  - jekyll-avatar
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate

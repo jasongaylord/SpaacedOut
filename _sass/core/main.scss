@@ -1,11 +1,14 @@
 main.page-content {
-    padding: 15px;
-
+    @media screen and (max-width: $media-breakpoint-sm-max) {
+        margin-top: $size-about-pane-mobile;
+        padding: 15px;
+    }
+    
     @media screen and (min-width: $media-breakpoint-md-min) {
-      max-width: calc(100% - #{$size-about-pane});
-      margin-left: $size-about-pane;
-      width: 100%;
-      padding: 30px;
+        max-width: calc(100% - #{$size-about-pane});
+        margin-left: $size-about-pane;
+        width: 100%;
+        padding: 30px;
     }
 
     .wrapper {

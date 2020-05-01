@@ -2,9 +2,10 @@ header {
     background-color: $color-header-background!important;
     position: fixed;
     top: 0;
+    z-index: 2;
 
     @media screen and (max-width: $media-breakpoint-sm-max) {
-        height: 55px;
+        height: $size-about-pane-mobile;
         padding: 15px;
         width: 100%;
     }
@@ -26,6 +27,7 @@ header {
         @media screen and (max-width: $media-breakpoint-sm-max) {
             display: none;
         }
+        z-index: 4;
     }
 
     .site-title {
@@ -33,5 +35,11 @@ header {
         font-size: $size-standard-font*1.4;
         color: $color-white;
         text-shadow: 0.15rem 0.15rem #000;
+        z-index: 6;
+    }
+
+    .site-subtitle {
+        color: $color-lightgrey;
+        z-index: 8;
     }
 }

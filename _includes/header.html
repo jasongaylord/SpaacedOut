@@ -3,4 +3,12 @@
     <a href="{{ "/" | relative_url }}"><img src="{{ site.contact.avatar-image }}" alt="{{ site.title | escape }}" class="site-avatar"></a>
     {%- endif -%}
     <a href="{{ "/" | relative_url }}" class="site-title" rel="author">{{ site.title | escape }}</a>
+    {%- if site.subtitle -%}
+    <div class="site-subtitle">
+        {{ site.subtitle }}
+    </div>
+    {%- endif -%}
+    {%- if site.content.header-suffix -%}
+      {%- include {{ site.content.header-suffix }} -%}
+    {%- endif -%}
 </header>

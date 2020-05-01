@@ -12,6 +12,10 @@ page_group_size: 5
 paginate_path: "/blog/page/:num"
 permalink: /blog/:year/:month/:day/:title
 
+# content expansion
+content:
+  header-suffix: header-suffix.html
+
 # contact
 contact: 
   avatar-image: /assets/images/avatar.png

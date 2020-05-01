@@ -1,14 +1,11 @@
 main.page-content {
-    background-color: #f4f4f4;
     padding: 15px;
-    display: flex;
 
     @media screen and (min-width: $media-breakpoint-md-min) {
       max-width: calc(100% - #{$size-about-pane});
       margin-left: $size-about-pane;
       width: 100%;
       padding: 30px;
-      height: 100vh;
     }
 
     .wrapper {

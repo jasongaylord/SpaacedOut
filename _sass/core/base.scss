@@ -1,49 +1,35 @@
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  font-family:$font-standard;
-  font-size: $size-standard-font;
-  line-height: $size-standard-line-height;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: $color-background;
+    font-family:$font-standard;
+    font-size: $size-standard-font;
+    line-height: $size-standard-line-height;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 img,
 embed,
 object,
 video {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 a {
     color: $color-link;
     transition: color 0.3s;
     &:hover {
-      color: $color-link-hover;
+        color: $color-link-hover;
     }
 }
 
-main {
+/*main {
     display: flex;
     height: 100%;
-}
-
-/*
-main {
-    margin: 0 90px;
-    display: flex;
-    height: 100%;
-
-    @media screen and (min-width: $media-breakpoint-lg-max) {
-        margin: 0 75px;
-    }
-
-    @media screen and (min-width: $media-breakpoint-md-max) {
-        margin: 0 35px;
-    }
 }*/

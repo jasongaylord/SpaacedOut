@@ -1,17 +1,19 @@
 header {
     background-color: $color-header-background!important;
-    height: 100%;
-    padding: 1%;
-    width: $size-about-pane;
+    position: fixed;
     top: 0;
-    
+
     @media screen and (max-width: $media-breakpoint-sm-max) {
-      height: auto;
-      padding: 10vh 0;
+        height: 55px;
+        padding: 15px;
+        width: 100%;
     }
+
     @media screen and (min-width: $media-breakpoint-md-min) {
-      position: fixed;
-      max-width: 285px;
+        height: 100%;
+        padding: 1%;
+        width: $size-about-pane;
+        max-width: 285px;
     }
 
     a, a:active, a:hover, a:visited {

@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Archives
 permalink: /archives/
 include_nav: true

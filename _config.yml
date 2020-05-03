@@ -44,7 +44,7 @@ rss: rss
 comments:
   enabled: false
   show_count: false
-  # disqus_shortname: jekyll
+#  disqus_shortname: jekyll
 
 # front matter
 defaults:

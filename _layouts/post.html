@@ -14,7 +14,7 @@ layout: default
     <span class="edit">Found a typo or mistake in the post? {% include post/edit.html %}</span>
   
     {% if site.comments.enabled %}
-      {% include comments.html %}
+      {% include comments/comments.html %}
     {% endif %}
   
     <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>

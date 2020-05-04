@@ -154,14 +154,22 @@
         display: none;
     }
 
+    .header .site-nav ul {
+        padding-top: 10px!important;
+
+        li.current-page {
+            width: 100%!important;
+        }
+    }
+
     .main-navigation {
         background-color: $color-header-background!important;
         margin: -4px -15px;
+        position: absolute;
+        right: -100%;
         visibility: hidden;
-
-        .site-nav ul {
-            padding-top: 10px;
-        }
+        -webkit-transition: right .3s ease-in-out !important;
+        transition: right .3s ease-in-out !important;
     }
 
     .social-links {
@@ -182,7 +190,7 @@
             z-index: 9997;
         }
 
-        .main-navigation {
+        .main-navigation, .site-nav, .social-links {
             right: 0;
             -webkit-transition: right .3s ease-in-out !important;
             transition: right .3s ease-in-out !important;

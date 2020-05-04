@@ -1,5 +1,5 @@
 .post-title {
-    color: $color-blue;
+    color: $color-blue!important;
 }
 
 .meta {
@@ -24,7 +24,7 @@
         }
     }
 
-    .date {
+    .post-date {
         margin-right: 10px;
         min-width: 150px;
         vertical-align: middle;
@@ -34,6 +34,7 @@
         font-family: $font-sans;
         font-weight: 900;
         font-size: 1.3em;
+        margin: 0 10px;
     }
 
     .edit {

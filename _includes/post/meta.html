@@ -3,7 +3,7 @@
         {% include post/comments_link.html %}
     {% endif %}
     <ul class="tags">{% include post/tags.html %}</ul>
-    <div class="date">
+    <div class="post-date">
         <i class="far fa-calendar-alt"></i>
         <time class="date dt-published" datetime="{{ page.date | default:post.date | date_to_xmlschema }}" itemprop="datePublished">
             {% assign date_format = "%b %-d, %Y" %}

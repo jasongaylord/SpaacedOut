@@ -140,25 +140,37 @@
         @media screen and (max-width: $media-breakpoint-sm-max) {
             display: inline-block;
             right: 10px;
+            float: right;
+            cursor: pointer;
+            color: $color-lightgrey;
         }
     }
 } // header
 
 
 @media screen and (max-width: $media-breakpoint-sm-max) {
+    .site-subtitle {
+        display: none;
+    }
+
     .main-navigation {
         right: 0;
         -webkit-transition: right .3s ease-in-out;
         transition: right .3s ease-in-out;
         visibility: hidden;
         background-color: red;
+        margin: -4px -15px
+    }
+
+    .social-links {
+        bottom: unset;
     }
 
     .menu--opened {
         .main-navigation {
-            //right: 0;
-            //-webkit-transition: right .3s ease-in-out;
-            //transition: right .3s ease-in-out;
+            right: 0;
+            -webkit-transition: right .3s ease-in-out;
+            transition: right .3s ease-in-out;
             visibility: visible;
         }
     }

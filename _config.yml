@@ -14,6 +14,7 @@ permalink: /blog/:year/:month/:day/:title
 
 # content expansion
 content:
+  code-theme: autumn
   header-suffix: header-suffix.html
 
 # contact

@@ -1,4 +1,4 @@
-// Borrowed from haacked/haackbar
+// Borrowed from haacked/haackbar and modified for many purposes.
 var SpaacedOut = (function() {
     // NodeList foreach Polyfill
     if (window.NodeList && !NodeList.prototype.forEach) {
@@ -41,6 +41,22 @@ var SpaacedOut = (function() {
             var l = i.getAttribute("data-lang").split("language-");
             1 < l.length && (l = l[1].split(" "[0], i.setAttribute("data-lang", l)));
           });
+        },
+        setupMenuToggle: function() {
+          var menuToggle = document.getElementById('menu-toggle');
+          if (menuToggle) {
+            menuToggle.addEventListener('click', function(e){
+              document.body.classList.toggle('menu--opened');
+              e.preventDefault();
+            },false);
+            document.body.classList.remove('menu--opened');
+          
+            window.addEventListener('resize', function () {
+              if (menuToggle.offsetParent === null) {
+                document.body.classList.remove('menu--opened');
+              }
+            }, true);
+          }
         }
     };
   })()
@@ -62,4 +78,5 @@ var SpaacedOut = (function() {
       listItem.removeChild(currentPageLink)
     }
     SpaacedOut.codeIdentity();
+    SpaacedOut.setupMenuToggle();
 })

@@ -10,7 +10,7 @@ $font-site-title: "Rock Salt", cursive, sans-serif;
 // Colors
 $color-primary: #222;
 $color-secondary: red;
-$color-lightgrey: #8899a6;
+$color-lightgrey: #2e3e4e; // was: #8899a6;
 $color-orange: #FF6154;
 $color-purple: #98b8fe;
 $color-white: #fff;
@@ -19,8 +19,8 @@ $color-background: #f4f4f4;
 $color-link: #000;
 $color-link-hover: #0a59b0;
 
-$color-header-background: #021523;
-$color-header-background-active: rgba(104,123,137,.5);
+$color-header-background: #2e3e4e; // was: #021523;
+$color-header-background-active: rgba(2, 21, 35, .5); // was: rgba(104,123,137,.5);
 
 // Sizes
 $size-standard-font: 16px;

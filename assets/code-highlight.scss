@@ -1,4 +1,4 @@
 ---
 ---
 
-@import "{% content.code-theme %}";
+@import "highlight/{{ site.content.code-theme | "autumn" }}";

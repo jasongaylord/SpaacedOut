@@ -170,6 +170,7 @@
         visibility: hidden;
         -webkit-transition: right .3s ease-in-out !important;
         transition: right .3s ease-in-out !important;
+        width: 100%;
     }
 
     .social-links {
@@ -181,13 +182,10 @@
         .page-content {
             height: 100%;
             left: 0;
-            overflow: hidden;
-            position: fixed;
             top: 0;
             -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
             width: 100%;
-            z-index: 9997;
         }
 
         .main-navigation, .site-nav, .social-links {

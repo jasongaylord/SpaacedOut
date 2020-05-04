@@ -21,6 +21,10 @@
             margin-right: 10px;
             margin-bottom: 10px;
             text-transform: lowercase;
+
+            a {
+                color: $color-post-meta;
+            }
         }
     }
 
@@ -35,6 +39,7 @@
         font-weight: 900;
         font-size: 1.3em;
         margin: 0 10px;
+        color: $color-lightgrey;
     }
 
     .edit {

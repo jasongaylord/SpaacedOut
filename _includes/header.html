@@ -12,25 +12,29 @@
       {% include {{ site.content.header-suffix }} %}
     {% endif %}
 
-    {% assign page_paths = site.pages | where: 'include_nav', true | map: "path" %}   
-    {% if page_paths %}
-      <nav class="site-nav">
-        <ul>
-            {% for path in page_paths %}
-            {% assign my_page = site.pages | where: "path", path | first %}
-            {% if my_page.title or my_page.nav_title %}
-            {% assign title = my_page.nav_title | default: my_page.title %}
-            <li><a class="nav-link" href="{{ my_page.url | relative_url }}">{{ title | escape }}</a></li>
-            {% endif %}
-          {% endfor %}
-          {% if site.contact.url %}
-          <li><a class="page-link" href="{{ site.contact.url }}">Contact</a></li>
-          {% endif %}
-        </ul>
-      </nav>
-    {% endif %}
+    <button id="menu-toggle" class="menu-toggle"><i class="fas fa-bars" aria-hidden="true"></i></button>
 
-    <div class="social-links">
-        {% include social-links.html %}
+    <div class="main-navigation" aria-label="Main Navigation">
+      {% assign page_paths = site.pages | where: 'include_nav', true | map: "path" %}   
+      {% if page_paths %}
+        <nav class="site-nav">
+          <ul>
+              {% for path in page_paths %}
+              {% assign my_page = site.pages | where: "path", path | first %}
+              {% if my_page.title or my_page.nav_title %}
+              {% assign title = my_page.nav_title | default: my_page.title %}
+              <li><a class="nav-link" href="{{ my_page.url | relative_url }}">{{ title | escape }}</a></li>
+              {% endif %}
+            {% endfor %}
+            {% if site.contact.url %}
+            <li><a class="page-link" href="{{ site.contact.url }}">Contact</a></li>
+            {% endif %}
+          </ul>
+        </nav>
+      {% endif %}
+
+      <div class="social-links">
+          {% include social-links.html %}
+      </div>
     </div>
 </header>

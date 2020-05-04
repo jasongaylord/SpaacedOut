@@ -42,15 +42,6 @@ var SpaacedOut = (function() {
             1 < l.length && (l = l[1].split(" "[0], i.setAttribute("data-lang", l)));
           });
         }
-        /*
-            $(".highlighter-rouge, figure.highlight").each(function () { 
-                $(this).attr("data-lang", "code"); 
-                var t = $(this).attr("class").split("language-"); 
-                1 < t.length && (t = t[1].split(" ")[0], $(this).attr("data-lang", t)); 
-                var i = $(this).find("[data-lang]").data(); 
-                i && $(this).attr("data-lang", i.lang) 
-            }) 
-        */
     };
   })()
   

@@ -143,6 +143,7 @@
             float: right;
             cursor: pointer;
             color: $color-lightgrey;
+            font-size: 1.2em;
         }
     }
 } // header
@@ -154,23 +155,19 @@
     }
 
     .main-navigation {
-        right: 0;
-        -webkit-transition: right .3s ease-in-out;
-        transition: right .3s ease-in-out;
-        visibility: hidden;
-        background-color: red;
+        background-color: $color-header-background!important;
         margin: -4px -15px
     }
 
     .social-links {
-        bottom: unset;
+        position: absolute!important;
     }
 
     .menu--opened {
         .main-navigation {
             right: 0;
-            -webkit-transition: right .3s ease-in-out;
-            transition: right .3s ease-in-out;
+            -webkit-transition: right .3s ease-in-out !important;
+            transition: right .3s ease-in-out !important;
             visibility: visible;
         }
     }

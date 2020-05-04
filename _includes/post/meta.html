@@ -9,7 +9,7 @@
             {% assign date_format = "%b %-d, %Y" %}
             {{ page.date | default:post.date | date: date_format }}
         </time>
-        <div class="vertical-bar">|</div>
+        <span class="vertical-bar">|</span>
         <i class="fas fa-pencil-alt"></i>
         <span class="edit">{% include post/edit.html %}</span>
     </div>

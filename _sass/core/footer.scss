@@ -1,5 +1,6 @@
 footer { 
     font-family: $font-sans;
-    color: $color-lightgrey;
+    font-size: ($size-standard-font*.75);
+    color: $color-grey;
     margin-top: 20px;
 }

@@ -146,11 +146,19 @@
 
 
 @media screen and (max-width: $media-breakpoint-sm-max) {
+    .main-navigation {
+        right: 0;
+        -webkit-transition: right .3s ease-in-out;
+        transition: right .3s ease-in-out;
+        visibility: hidden;
+        background-color: red;
+    }
+
     .menu--opened {
         .main-navigation {
-            right: 0;
-            -webkit-transition: right .3s ease-in-out;
-            transition: right .3s ease-in-out;
+            //right: 0;
+            //-webkit-transition: right .3s ease-in-out;
+            //transition: right .3s ease-in-out;
             visibility: visible;
         }
     }

@@ -156,11 +156,13 @@
 
     .main-navigation {
         background-color: $color-header-background!important;
-        margin: -4px -15px
+        margin: -4px -15px;
+        visibility: hidden;
     }
 
     .social-links {
-        position: absolute!important;
+        position: relative!important;
+        padding-top: 5px;
     }
 
     .menu--opened {

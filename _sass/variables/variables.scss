@@ -3,24 +3,23 @@ $transition-time: 0.3s;
 
 // Fonts
 $font-standard: Merriweather, serif;
-$font-heading: Raleway, sans-serif;
-$font-sans: Lato, sans-serif;
+$font-sans: Raleway, sans-serif;
 $font-site-title: "Rock Salt", cursive, sans-serif;
 
 // Colors
 $color-primary: #222;
-$color-secondary: red;
+$color-secondary: #01243B; // was: #021523; 
 $color-grey: #2e3e4e;
-$color-lightgrey: #8899a6;
-$color-navy: #021523;
+$color-lightgrey: #E2E2E2; // was: #8899a6;
+$color-navy: #01243B;
 $color-orange: #cc6666; // was: #FF6154;
 $color-purple: #98b8fe;
 $color-white: #fff;
-$color-background: #f4f4f4;
 
 $color-link: $color-navy;
 $color-link-hover: #0a59b0;
 
+$color-background: #f4f4f4;
 $color-header-background: $color-grey;
 $color-header-background-active: rgba(2, 21, 35, .5); // was: rgba(104,123,137,.5);
 $color-social-icons-background: rgba(2, 21, 35, 0.2);

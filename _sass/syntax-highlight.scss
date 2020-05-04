@@ -32,7 +32,9 @@ kbd {
 figure.highlight::before,
 div.highlighter-rouge::before {
     content: attr(data-lang);
-    font-size: .9rem;
+    font-family: $font-sans;
+    text-decoration: lowercase;
+    font-size: .8rem;
     color: #e9ecef;
     position: absolute;
     display: block;
@@ -73,7 +75,7 @@ figure pre {
 
 .lineno {
     text-align: right;
-    margin-right: 10px;
+    margin-right: 10px!important;
 }
 
 /* Base16 Tomorrow Dark by Chris Kempson; https://github.com/idleberg */

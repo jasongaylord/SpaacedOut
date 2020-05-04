@@ -95,6 +95,7 @@
         position: absolute;
         width: 100%;
         z-index: 10;
+        background-color: $color-social-icons-background;
       
         // If screen is resized too small, plop the footer in the bottom
         @media screen and (max-height: 600px) {
@@ -115,11 +116,11 @@
                 padding: 0;
 
                 a {
-                    color: $color-white;
+                    color: $color-social-icons-color;
                     font-size: 2em;
 
                     &:hover {
-                        color: $color-purple;
+                        color: $color-social-icons-hover;
                         transition: color $transition-time;
                     }
                 }

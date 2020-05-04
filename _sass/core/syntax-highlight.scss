@@ -13,6 +13,7 @@ pre.highlight {
     position: relative;
 }
 
+li code.highlighter-rouge,
 p code.highlighter-rouge,
 p kbd {
     color: #c66;
@@ -72,6 +73,7 @@ figure pre {
 
 .lineno {
     text-align: right;
+    margin-right: 10px;
 }
 
 /* Base16 Tomorrow Dark by Chris Kempson; https://github.com/idleberg */

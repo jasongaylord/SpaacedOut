@@ -158,6 +158,10 @@
         background-color: $color-header-background!important;
         margin: -4px -15px;
         visibility: hidden;
+
+        .site-nav ul {
+            padding-top: 10px;
+        }
     }
 
     .social-links {
@@ -166,6 +170,18 @@
     }
 
     .menu--opened {
+        .page-content {
+            height: 100%;
+            left: 0;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+            width: 100%;
+            z-index: 9997;
+        }
+
         .main-navigation {
             right: 0;
             -webkit-transition: right .3s ease-in-out !important;

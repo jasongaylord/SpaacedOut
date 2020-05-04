@@ -1,13 +1,16 @@
 <div class="meta">
-    <span class="tags">{% include post/tags.html %}</span>
     {% if site.comments.enabled and site.comments.show_count == true %}
         {% include post/comments_link.html %}
     {% endif %}
-    <span class="edit">{% include post/edit.html %}</span>
-    <div class="post-date">
+    <ul class="tags">{% include post/tags.html %}</ul>
+    <div class="date">
+        <i class="far fa-calendar-alt"></i>
         <time class="date dt-published" datetime="{{ page.date | default:post.date | date_to_xmlschema }}" itemprop="datePublished">
             {% assign date_format = "%b %-d, %Y" %}
             {{ page.date | default:post.date | date: date_format }}
         </time>
+        <div class="vertical-bar">|</div>
+        <i class="fas fa-pencil-alt"></i>
+        <span class="edit">{% include post/edit.html %}</span>
     </div>
 </div>

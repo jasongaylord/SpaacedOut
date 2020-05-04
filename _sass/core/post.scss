@@ -1,4 +1,42 @@
-.post-date {
-    margin-right: 10px;
-    min-width: 150px;
+.post-title {
+    color: $color-blue;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $color-post-meta;
+
+    .tags {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            float: left;
+            background-color: $color-lightgrey;
+            padding: 5px 20px;
+            border-radius: 2px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            text-transform: lowercase;
+        }
+    }
+
+    .date {
+        margin-right: 10px;
+        min-width: 150px;
+        vertical-align: middle;
+    }
+
+    .vertical-bar {
+        font-family: $font-sans;
+        font-weight: 900;
+        font-size: 1.3em;
+    }
+
+    .edit {
+        margin-right: 0;
+    }
 }

@@ -41,10 +41,13 @@
     }
 
     .site-subtitle {
-        color: $color-lightgrey;
+        color: $color-lightblue;
         z-index: 8;
         position: relative;
         margin: 25px 0;
+        text-transform: uppercase;
+        font-size: 1.1em;
+        text-align: center;
     }
 
     .site-nav {

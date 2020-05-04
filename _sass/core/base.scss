@@ -25,6 +25,7 @@ video {
 a {
     color: $color-link;
     transition: color $transition-time;
+    text-decoration: none;
     &:hover {
         color: $color-link-hover;
     }

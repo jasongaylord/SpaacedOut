@@ -7,6 +7,11 @@ pre.highlight {
     position: relative
 }
 
+.highlighter-rouge {
+    font-weight: 300;
+    position: relative
+}
+
 .table code.highlighter-rouge,
 kbd,
 li code.highlighter-rouge,
@@ -55,6 +60,10 @@ figure table::-webkit-scrollbar-thumb,
 pre::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background-color: #ecebe7
+}
+
+.rouge-table .code pre {
+    overflow: hidden
 }
 
 .rouge-table .code pre {

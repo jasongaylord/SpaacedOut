@@ -1,6 +1,32 @@
-@import "colors";
-@import "fonts";
-@import "sizes";
-
 $baseurl: '' !default;
 $transition-time: 0.3s;
+
+// Fonts
+$font-standard: Merriweather, serif;
+$font-heading: Raleway, sans-serif;
+$font-sans: Lato, sans-serif;
+$font-site-title: "Rock Salt", cursive, sans-serif;
+
+// Colors
+$color-primary: #222;
+$color-secondary: red;
+$color-lightgrey: #8899a6;
+$color-orange: #FF6154;
+$color-purple: #98b8fe;
+$color-white: #fff;
+$color-background: #f4f4f4;
+
+$color-link: #000;
+$color-link-hover: #0a59b0;
+
+$color-header-background: #021523;
+$color-header-background-active: rgba(104,123,137,.5);
+
+// Sizes
+$size-standard-font: 16px;
+$size-standard-line-height: 1.2em;
+
+$size-about-pane: 300px;
+$size-about-pane-mobile: 55px;
+
+@import "media-breakpoints";

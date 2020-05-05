@@ -1,54 +1,118 @@
-# SpaacedOut
 
-Inspired by [haacked/haackbar](https://github.com/haacked/haackbar) and [thelehhman/plainwhite](https://github.com/thelehhman/plainwhite-jekyll).
+# Welcome to the SpaacedOut Jekyll Theme
+Over the past several days I've been working on creating a new theme for Jekyll, called SpaacedOut. You can see the full details of this theme at
+[jasongaylord/SpaacedOut](https://github.com/jasongaylord/SpaacedOut). This theme is a mashup of the 2019 version of [JasonGaylord.com](https://www.jasongaylord.com), the [Haacked theme](https://github.com/haacked/hackbar), and the [plainwhite theme](https://github.com/thelehhman/plainwhite-jekyll).
+<!--more-->
+This theme has several features enabled by default:
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+1. Post Excerpts on the Home Page
+2. Google Analytics tracking
+3. Post Archival by Year
+4. Social Media Icons in the Site Header
+5. Disqus comment support
+6. Dynamic menu support
+7. Automatic Line Numbering and Language Indicator for Syntax Highlighting
+8. Git link for editing
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+These features are explained in greater detail in the [custom installation](#custom-installation) section below.
 
-TODO: Delete this and the text above, and describe your gem
+# Installation
+This theme is typically used as a [remote theme on GitHub pages](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) and through the Jekyll remote theme plugin [explained on my blog](https://www.jasongaylord.com/blog/creating-a-jekyll-theme-from-windows).
 
+To use the theme, there are two different methods:
 
-## Installation
+1. [Abbreviated Installation](#abbreviated-installation)
+2. [Custom Installation](#custom-installation)
 
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "SpaacedOut"
-```
-
-And add this line to your Jekyll site's `_config.yml`:
+## Abbreviated Installation
+You can get started quickly by adding the following to the `_config.yml` of your Jekyll site:
 
 ```yaml
-theme: SpaacedOut
+remote_theme: jasongaylord/spaacedout
 ```
 
-And then execute:
+Next, you should copy all [settings from the SpaacedOut `_config.yml`](https://github.com/jasongaylord/spaacedout/blob/master/_config.yml) and past the values into your `_config.yml` file replacing everything. Note, if you have modified your `_config.yml` already, you should probably resort to the [Custom Installation](#custom-installation) instructions below. Of course, you'll want to modify the values to reflect your site (i.e. Change 'My Blog' to the title you'd like on your site).
 
-    $ bundle
+If you are looking for futher customization, please continue. Otherwise, you should be ok to check in your changes and view the site in GitHub Pages. If everything came out ok, it should resemble this:
 
-Or install it yourself as:
+![](https://cdn.jasongaylord.com/images/2020/05/06/SpaacedOut-Theme.jpg)
 
-    $ gem install SpaacedOut
+In addition, there's full mobile support with a flyout menu:
 
-## Usage
+![](https://cdn.jasongaylord.com/images/2020/05/06/SpaacedOut-Theme-Mobile.jpg)
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+## Custom Installation
 
-## Contributing
+Below you'll find a basic overview to customize the theme. In addition, each area of the configuration is explained via comments in the [`_config.yml`](https://github.com/jasongaylord/SpaacedOut/blob/master/_config.yml) Additional details to assist in customizing the theme can be found in the [Dissecting the Theme](#dissecting-the-theme) section below.
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+### Home Layout
+`home.html` is the default page for the site and is the initial page that loads when your site loads. The current home layout includes a placeholder for text followed by a paginated list of posts. The placeholder will allow you to add content to `index.html` or `index.md` (located at the root of your site) which will be placed above the paginated list. This is a great way to introduce the visitors to your site.
 
-## Development
+In addition, if you include `&lt;!--more--&gt;` in your post, only the content above the comment will be shown as an excerpt on your homepage and within the post archives.
 
-To set up your environment to develop this theme, run `bundle install`.
+### Content Extras
+Rather than overriding each of the includes or layouts simply to add content, I've added a mechanism to add content to the common areas of the site. The following are currently defined by the theme and can be additional markdown or html files found in your sites local `_includes` folder. These files can be defined under the `content` folder:
 
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+- `head-suffix` - This allows additional scripts and styles to be added to the head of the site.
+- `header-suffix` - This allows for additional content to be dropped in between the title and the menu on the left side.
 
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `SpaacedOut.gemspec` accordingly.
+### Override Layout or Includes
 
-## License
+~TODO~
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
+## Dissecting the Theme
+
+### Layouts
+The files mentioned below can be found in the `_layouts` directory. If you are unfamiliar with layouts, these are similar to a template or master page in other languages.
+
+- `default.html` - This is the default layout for the site. The other layouts below all derive their layouts from this. 
+- `home.html` - As [mentioned above](#home-layout), this is the initial page of the website.
+- `page.html` - This layout is used for pages found in the `_page` or the `assets\pages` directories.
+- `post.html` - This layout is used for blog\news posts.
+
+### Includes
+The files mentioned below can be found in the `_includes` directory. Includes are partial content that can be injected and loaded in either a layout or another include.
+
+- `footer.html` - This is the footer section of the site and includes a copyright tag and the reference to the theme.
+- `head.html` - This includes the HTML head section content. If you'd like to add additional style and/or scripts, you don't need to override this [[Read More]](#content-extras). Additional configuration items can be found in the `_includes\head` directory:
+  - `google-analytics.html` - This configures Google Analytics if defined in your `_config_yml`
+  - `stylesheets.html` - This lists the stylesheets that are used for the site.
+  - `twitter.html` - If the Twitter social icon is defined, this places a Twitter card on the site.
+- `header.html` - This is the header section of the site and includes the title, avatar, menu, and social icons (if present).
+- `pagination.html` - This handles the pagination of posts.
+- `social-links.html` - This handles the display of the social links.
+- `_includes\comments` directory:
+  - `comments.html` - Used to reference the comment block at the bottom of content. If you want to expand beyond disqus, this is where you could do it.
+  - `comments_link.html` - Used to reference the comment count at the top of content. If you want to expand beyond disqus, this is where you could do it.
+  - `disqus_comments.html` - This contains the link to the disqus JavaScript file.
+  - `disqus_comments_link.html` - This contains the reference to the specific diqus identifier based on the page or post URL
+- `_includes\post` directory:
+  - `archive_post.html` - The post template in the archive list.
+  - `edit.html` - Contains the markup used to build the suggest edit link on the page.
+  - `meta.html` - Includes the post meta data such as the comment link, date, and tags
+  - `tags.html` - Includes the list of tags in the top of a post.
+
+  ### Styles
+
+  ~TODO~
+
+  ### Assets
+
+  ~TODO~
+
+  ### Plugins 
+
+  ~TODO~
+
+  # Contributing
+
+  ~TODO~
+
+  # Development
+
+  ~TODO~
+
+  # License
+  
+  ~TODO~

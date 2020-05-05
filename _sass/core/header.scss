@@ -140,7 +140,8 @@
         @media screen and (max-width: $media-breakpoint-sm-max) {
             display: inline-block;
             right: 10px;
-            float: right;
+            top: 15px;
+            position: absolute;
             cursor: pointer;
             color: $color-lightgrey;
             font-size: 1.2em;

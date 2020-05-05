@@ -35,11 +35,11 @@ Next, you should copy all [settings from the SpaacedOut `_config.yml`](https://g
 
 If you are looking for futher customization, please continue. Otherwise, you should be ok to check in your changes and view the site in GitHub Pages. If everything came out ok, it should resemble this:
 
-![](https://cdn.jasongaylord.com/images/2020/05/06/SpaacedOut-Theme.jpg)
+![](https://cdn.jasongaylord.com/images/2020/05/07/SpaacedOut-Theme.jpg)
 
 In addition, there's full mobile support with a flyout menu:
 
-![](https://cdn.jasongaylord.com/images/2020/05/06/SpaacedOut-Theme-Mobile.jpg)
+![](https://cdn.jasongaylord.com/images/2020/05/07/SpaacedOut-Theme-Mobile.jpg)
 
 ## Custom Installation
 

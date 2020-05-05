@@ -10,7 +10,7 @@ var SpaacedOut = (function() {
         }
     }
   
-    // Haack namespace object.
+    // Return the namespace object.
     return {
         ready: function(init) {
           if (document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll)) {

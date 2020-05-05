@@ -4,7 +4,12 @@ author: George Washington
 description: >
   Here is my website. This description will appear in the meta
   data on the site and in the feed.xml site description.
-repository: jasongaylord/SpaacedOut
+
+# git edit capabilities
+git:
+#  host: https://github.com/
+  repository: jasongaylord/SpaacedOut
+  branch: gh-pages
 
 # pagination and permalink
 paginate: 5

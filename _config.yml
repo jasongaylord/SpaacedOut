@@ -12,6 +12,7 @@ git:
   branch: gh-pages
 
 # pagination and permalink
+show_excerpts: true
 paginate: 5
 page_group_size: 5
 paginate_path: "/blog/page/:num"
@@ -47,8 +48,8 @@ rss: rss
 
 # comments
 comments:
-  enabled: false
-  show_count: false
+#  enabled: false
+#  show_count: false
 #  disqus_shortname: jekyll
 
 # front matter
@@ -78,7 +79,6 @@ defaults:
 plugins:
   - jekyll-avatar
   - jekyll-feed
-  - jekyll-gist
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap

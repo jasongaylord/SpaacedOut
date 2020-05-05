@@ -1,7 +1,7 @@
 # Welcome to the SpaacedOut Jekyll Theme
 Over the past several days I've been working on creating a new theme for Jekyll, called SpaacedOut. You can see the full details of this theme at
 [jasongaylord/SpaacedOut](https://github.com/jasongaylord/SpaacedOut). This theme is a mashup of the 2019 version of [JasonGaylord.com](https://www.jasongaylord.com), the [Haacked theme](https://github.com/haacked/hackbar), and the [plainwhite theme](https://github.com/thelehhman/plainwhite-jekyll).
-<!--more-->
+
 This theme has several features enabled by default:
 
 1. Post Excerpts on the Home Page
@@ -31,15 +31,6 @@ remote_theme: jasongaylord/spaacedout
 ```
 
 Next, you should copy all [settings from the SpaacedOut `_config.yml`](https://github.com/jasongaylord/spaacedout/blob/master/_config.yml) and past the values into your `_config.yml` file replacing everything. Note, if you have modified your `_config.yml` already, you should probably resort to the [Custom Installation](#custom-installation) instructions below. Of course, you'll want to modify the values to reflect your site (i.e. Change 'My Blog' to the title you'd like on your site).
-
-You'll also want to override the `pages\about.md` file by creating your own file in that same location. If you don't want an _About_ page, simply copy these contents to that file:
-
-```md
----
-title: ""
-include_nav: false
----
-```
 
 If you are looking for futher customization, please continue. Otherwise, you should be ok to check in your changes and view the site in GitHub Pages. If everything came out ok, it should resemble this:
 
@@ -113,7 +104,7 @@ The files mentioned below can be found in the `_includes` directory. Includes ar
 There are two primary style sheets that are referenced in the `_includes\head.html` file. You'll notice that both reference a `.css` extension as opposed to a `.scss` extension. This is because Jekyll compiles the SASS to CSS:
 
 1. `assets\style.scss` - This references the `_sass\SpaacedOut.scss` file which in turn includes `variables\variables.scss` and `core\core.scss`, both found in the `_sass` directory. 
-2. `assets\syntax-highlight.scss` - This applies syntax highlighting to the Rouge highlight plugin for Jekyll. This was modified slightly from the post found at [](https://textuploader.com/1odmf). 
+2. `assets\syntax-highlight.scss` - This applies syntax highlighting to the Rouge highlight plugin for Jekyll. This was modified slightly from the post found at [https://textuploader.com/1odmf]. 
 
 ### Included Pages
 Inside of the `assets` folder, you'll find a `pages` directory. Currently, only the `archives.md` file exists inside of this directory. This file displays the _archive_ menu option in the theme and lists the posts in descending order by year.
@@ -131,7 +122,7 @@ The following plugins are installed in the *SpaceOut* theme:
 - `jekyll-sitemap`
 
 # Contributing
-Bug reports and pull requests are welcome on GitHub at [](https://github.com/jasongaylord/SpaacedOut). 
+Bug reports and pull requests are welcome on GitHub at [https://github.com/jasongaylord/SpaacedOut].
 
 # Development
 I've blogged about getting started with themes and Jekyl. You can read more about it at [https://www.jasongaylord.com/blog/creating-a-jekyll-theme-from-windows](https://jasong.us/35luIer)

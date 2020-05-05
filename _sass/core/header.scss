@@ -155,6 +155,7 @@
     }
 
     .header .site-nav ul {
+        padding-left: 0!important;
         padding-top: 10px!important;
 
         li.current-page {
@@ -164,12 +165,10 @@
 
     .main-navigation {
         background-color: $color-header-background!important;
-        margin: -4px -15px;
         position: absolute;
-        right: -100%;
-        visibility: hidden;
         -webkit-transition: right .3s ease-in-out !important;
         transition: right .3s ease-in-out !important;
+        right: -100%;
         width: 100%;
     }
 
@@ -190,8 +189,6 @@
 
         .main-navigation, .site-nav, .social-links {
             right: 0;
-            -webkit-transition: right .3s ease-in-out !important;
-            transition: right .3s ease-in-out !important;
             visibility: visible;
         }
     }

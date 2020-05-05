@@ -32,6 +32,15 @@ remote_theme: jasongaylord/spaacedout
 
 Next, you should copy all [settings from the SpaacedOut `_config.yml`](https://github.com/jasongaylord/spaacedout/blob/master/_config.yml) and past the values into your `_config.yml` file replacing everything. Note, if you have modified your `_config.yml` already, you should probably resort to the [Custom Installation](#custom-installation) instructions below. Of course, you'll want to modify the values to reflect your site (i.e. Change 'My Blog' to the title you'd like on your site).
 
+You'll also want to override the `pages\about.md` file by creating your own file in that same location. If you don't want an _About_ page, simply copy these contents to that file:
+
+```md
+---
+title: ""
+include_nav: false
+---
+```
+
 If you are looking for futher customization, please continue. Otherwise, you should be ok to check in your changes and view the site in GitHub Pages. If everything came out ok, it should resemble this:
 
 ![](https://cdn.jasongaylord.com/images/2020/05/07/SpaacedOut-Theme.jpg)

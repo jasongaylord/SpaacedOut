@@ -163,7 +163,7 @@
             padding-top: 10px!important;
 
             li.current-page {
-                width: 100%!important;
+                width: 100vw!important;
             }
         }
     }
@@ -177,7 +177,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        min-height: 100vw;
+        min-height: 100vh;
         top:0;
     }
 

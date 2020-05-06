@@ -1,9 +1,10 @@
 {% capture date %}{{ post.date }}{% endcapture %}
 {% capture this_year %}{{ date | date: "%Y" }}{% endcapture %}
+{% capture number %}{{ forloop.length }}{% endcapture %}
 {% unless year == this_year %}
 {% assign year = this_year %}
-{% unless forloop.first %}
-</ul>
+{% unless forloop.first && forloop.length %}
+</ul> Length: {{ forloop.length }}
 {% endunless %}
 <h2 class="year">{{ date | date: "%Y" }}</h2>
 <ul>

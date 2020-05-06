@@ -12,7 +12,7 @@ include_nav: true
 	{% include post/archive_post.html %}
 {% endif %}
 {% endfor %}
-{% if postCount == 0 %}
+{% if postCount == 1 %}
   </ul>
 {% endif %}
 </div>

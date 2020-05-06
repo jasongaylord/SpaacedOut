@@ -32,11 +32,11 @@ If you are looking for futher customization, please [continue](#custom-installat
 
 If everything came out ok, it should resemble this:
 
-![](https://cdn.jasongaylord.com/images/2020/05/07/SpaacedOut-Theme.jpg)
+![](https://cdn.jasongaylord.com/images/2020/05/08/SpaacedOut-Theme.jpg)
 
 In addition, there's full mobile support with a flyout menu:
 
-![](https://cdn.jasongaylord.com/images/2020/05/07/SpaacedOut-Theme-Mobile.jpg)
+![](https://cdn.jasongaylord.com/images/2020/05/08/SpaacedOut-Theme-Mobile.jpg)
 
 ## Custom Installation
 Below you'll find a basic overview to customize the theme. In addition, each area of the configuration is explained via comments in the [`_config.yml`](https://jasong.us/3fqiwO2) Additional details to assist in customizing the theme can be found in the [Dissecting the Theme](#dissecting-the-theme) section below.

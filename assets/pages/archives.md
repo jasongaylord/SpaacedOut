@@ -10,8 +10,6 @@ include_nav: true
 	{% include post/archive_post.html %}
 {% endif %}
 {% endfor %}
-{% for postCount in site.posts limit:1 %}
   </ul>
   <div>FOO</div>
-{% endfor %}
 </div>

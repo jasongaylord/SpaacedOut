@@ -38,8 +38,14 @@ var SpaacedOut = (function() {
         codeIdentity: function() {
           document.querySelectorAll(".highlighter-rouge, figure.highlight").forEach(i => {
             i.setAttribute("data-lang", "code");
-            var l = i.getAttribute("data-lang").split("language-");
-            1 < l.length && (l = l[1].split(" "[0], i.setAttribute("data-lang", l)));
+            var l = i.getAttribute("class").split("language-");
+            if (l.length > 1) {
+              var lang = l[1].split(" ");
+              if (lang.length > 0) {
+                i.setAttribute("data-lang", lang);
+              }
+            }
+            //1 < l.length && (l = l[1].split(" "[0], i.setAttribute("data-lang", l)));
           });
         },
         setupMenuToggle: function() {

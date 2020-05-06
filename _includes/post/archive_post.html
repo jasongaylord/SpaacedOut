@@ -4,7 +4,7 @@
 {% unless year == this_year %}
 {% assign year = this_year %}
 {% unless forloop.first %}
-</ul><div>BAR</div> 
+</ul>
 {% endunless %}
 <h2 class="year">{{ date | date: "%Y" }}</h2>
 <ul>

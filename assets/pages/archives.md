@@ -11,5 +11,4 @@ include_nav: true
 {% endif %}
 {% endfor %}
   </ul>
-  <div>FOO</div>
 </div>

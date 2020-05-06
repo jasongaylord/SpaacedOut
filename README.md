@@ -1,6 +1,6 @@
 # Welcome to the SpaacedOut Jekyll Theme
-Over the past several days I've been working on creating a new theme for Jekyll, called SpaacedOut. You can see the full details of this theme at
-[jasongaylord/SpaacedOut](https://github.com/jasongaylord/SpaacedOut). This theme is a mashup of the 2019 version of [JasonGaylord.com](https://www.jasongaylord.com), the [Haacked theme](https://github.com/haacked/hackbar), and the [plainwhite theme](https://github.com/thelehhman/plainwhite-jekyll).
+Here's a new, responsive GitHub Pages and Jekyll theme called SpaacedOut. You can see the full details of this theme at
+[jasongaylord/SpaacedOut](https://jasong.us/2ywUm3C). This theme is a mashup of the 2019 version of [JasonGaylord.com](https://jasong.us/2SHDm1C), the [Haacked theme](https://jasong.us/2SItEvN), and the [plainwhite theme](https://jasong.us/2WxMoPJ).
 
 This theme has several features enabled by default:
 
@@ -16,23 +16,21 @@ This theme has several features enabled by default:
 These features are explained in greater detail in the [custom installation](#custom-installation) section below.
 
 # Installation
-This theme is typically used as a [remote theme on GitHub pages](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) and through the Jekyll remote theme plugin [explained on my blog](https://www.jasongaylord.com/blog/creating-a-jekyll-theme-from-windows).
+This theme is typically used as a [remote theme on GitHub pages](https://jasong.us/3bc5XCq) and through the Jekyll remote theme plugin [explained on my blog](https://jasong.us/35luIer).
 
 To use the theme, there are two different methods:
 
-1. [Abbreviated Installation](#abbreviated-installation)
-2. [Custom Installation](#custom-installation)
+1. [Abbreviated Installation](#abbreviated-installation) - A quick installation to begin using SpaacedOut right away
+2. [Custom Installation](#custom-installation) - A more in depth overview to allow customization of the SpaacedOut theme
 
 ## Abbreviated Installation
-You can get started quickly by adding the following to the `_config.yml` of your Jekyll site:
+Please note that if you have modified your `_config.yml` already, you should probably resort to the [Custom Installation](#custom-installation) instructions below.
 
-```yaml
-remote_theme: jasongaylord/spaacedout
-```
+To get started, you should copy all [settings from the SpaacedOut `_config.yml`](https://jasong.us/2A05ExK) and past the values into your `_config.yml` file replacing everything. Next, review the settings and modify the values to reflect your site (i.e. Change 'My Blog' to the title you'd like on your site).
 
-Next, you should copy all [settings from the SpaacedOut `_config.yml`](https://github.com/jasongaylord/spaacedout/blob/master/_config.yml) and past the values into your `_config.yml` file replacing everything. Note, if you have modified your `_config.yml` already, you should probably resort to the [Custom Installation](#custom-installation) instructions below. Of course, you'll want to modify the values to reflect your site (i.e. Change 'My Blog' to the title you'd like on your site).
+If you are looking for futher customization, please [continue](#custom-installation). Otherwise, you should be ok to check in your changes and view the site in GitHub Pages. 
 
-If you are looking for futher customization, please continue. Otherwise, you should be ok to check in your changes and view the site in GitHub Pages. If everything came out ok, it should resemble this:
+If everything came out ok, it should resemble this:
 
 ![](https://cdn.jasongaylord.com/images/2020/05/07/SpaacedOut-Theme.jpg)
 
@@ -41,8 +39,7 @@ In addition, there's full mobile support with a flyout menu:
 ![](https://cdn.jasongaylord.com/images/2020/05/07/SpaacedOut-Theme-Mobile.jpg)
 
 ## Custom Installation
-
-Below you'll find a basic overview to customize the theme. In addition, each area of the configuration is explained via comments in the [`_config.yml`](https://github.com/jasongaylord/SpaacedOut/blob/master/_config.yml) Additional details to assist in customizing the theme can be found in the [Dissecting the Theme](#dissecting-the-theme) section below.
+Below you'll find a basic overview to customize the theme. In addition, each area of the configuration is explained via comments in the [`_config.yml`](https://jasong.us/3fqiwO2) Additional details to assist in customizing the theme can be found in the [Dissecting the Theme](#dissecting-the-theme) section below.
 
 ### Home Layout
 `home.html` is the default page for the site and is the initial page that loads when your site loads. The current home layout includes a placeholder for text followed by a paginated list of posts. The placeholder will allow you to add content to `index.html` or `index.md` (located at the root of your site) which will be placed above the paginated list. This is a great way to introduce the visitors to your site.
@@ -50,10 +47,10 @@ Below you'll find a basic overview to customize the theme. In addition, each are
 In addition, if you include `<!--more-->` in your post, only the content above the comment will be shown as an excerpt on your homepage and within the post archives.
 
 ### Content Extras
-Rather than overriding each of the includes or layouts simply to add content, I've added a mechanism to add content to the common areas of the site. The following are currently defined by the theme and can be additional markdown or html files found in your sites local `_includes` folder. These files can be defined under the `content` folder:
+Rather than overriding each of the includes or layouts simply to add content, I've added a mechanism to add content to the common areas of the site. Since GitHub Pages currently supports Jekyl 3.8 and not 4.0, we cannot use dynamic includes. The following are configuration elements that, when setting the value to `true`, will render their respective files in your sites local `_includes` folder. These files can be defined under the `content` node in the `_config.yml` file:
 
-- `head-suffix` - This allows additional scripts and styles to be added to the head of the site.
-- `header-suffix` - This allows for additional content to be dropped in between the title and the menu on the left side.
+- `head-s` - This allows additional scripts and styles to be added to the head of the site. If setting to `true`, you'll need to create the following in your local site: `_includes\head-suffix.html`.
+- `header-s` - This allows for additional content to be dropped in between the title and the menu on the left side. If setting to `true`, you'll need to create the following in your local site: `_includes\header-suffix.html`.
 
 ### Override Layout, Includes, or Style
 Any of the layouts or includes can be overwritten. Simply copy over the file or directory to your site and modify as you see fit.
@@ -61,11 +58,11 @@ Any of the layouts or includes can be overwritten. Simply copy over the file or 
 If you are looking for your own color scheme, fonts, or sizes, I'd recommend the following steps:
 
 1. Create your own SASS file in the `assets` directory called `style.scss`.
-2. Open up the _variables_ found in `_sass_\variables\variables.scss` in this theme into your new `style.scss` file.
-3. Below the _variables_ contents you just copied, add a new line to import the `core.scss` file like:
+2. Copy the _variables_ found in `_sass_\variables\variables.scss` in the _SpaacedOut_ theme into your new `style.scss` file. You only need to include the variables that you are replacing.
+3. Below the _variables_ contents you just copied, add a new line to import the `SpaacedOut.scss` file like:
 
 ```css
-@import "core/core";
+@import "SpaacedOut";
 ```
 
 ## Dissecting the Theme
@@ -104,7 +101,7 @@ The files mentioned below can be found in the `_includes` directory. Includes ar
 There are two primary style sheets that are referenced in the `_includes\head.html` file. You'll notice that both reference a `.css` extension as opposed to a `.scss` extension. This is because Jekyll compiles the SASS to CSS:
 
 1. `assets\style.scss` - This references the `_sass\SpaacedOut.scss` file which in turn includes `variables\variables.scss` and `core\core.scss`, both found in the `_sass` directory. 
-2. `assets\syntax-highlight.scss` - This applies syntax highlighting to the Rouge highlight plugin for Jekyll. This was modified slightly from the post found at [https://textuploader.com/1odmf]. 
+2. `assets\syntax-highlight.scss` - This applies syntax highlighting to the Rouge highlight plugin for Jekyll. This was modified slightly from the post found at [https://textuploader.com/1odmf](https://jasong.us/3fAIFKa).
 
 ### Included Pages
 Inside of the `assets` folder, you'll find a `pages` directory. Currently, only the `archives.md` file exists inside of this directory. This file displays the _archive_ menu option in the theme and lists the posts in descending order by year.
@@ -115,17 +112,18 @@ Inside of the `assets` folder, you'll find a `js\utils.js` file. You'll notice t
 ### Plugins 
 The following plugins are installed in the *SpaceOut* theme:
 
-- `jekyll-avatar`
-- `jekyll-feed`
-- `jekyll-paginate`
-- `jekyll-seo-tag` - For property information, visit [jekyll/jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md)
-- `jekyll-sitemap`
+- `jekyll-avatar` - For usage, visit [benbalter/jekyll-avatar](https://jasong.us/2WdRFNL). This allows you to quickly and easily add a specified user's GitHub avatar to your site.
+- `jekyll-feed` - For usage, visit [jekyll/jekyll-feed](https://jasong.us/2WCveR0). This plugin will automatically generate an Atom feed at /feed.xml that can be overwritten.
+- `jekyll-paginate` - For usage, visit [jekyll/jekyll-paginate](https://jasong.us/3drrhp1). While this plugin is no longer active, it remains the easiest way to paginate in GitHug pages.
+- `jekyll-remote-theme` - For usage, visit [benbalter/jekyll-remote-theme](https://jasong.us/3d65jIj). This will allow you to point at a remove theme.
+- `jekyll-seo-tag` - For usage, visit [jekyll/jekyll-seo-tag](https://jasong.us/2ynPApj). This provides many SEO tags at the head of the site. 
+- `jekyll-sitemap` - For usage, visit [jekyll/jekyll-sitemap](https://jasong.us/2ynRztL). This plugin generates a sitemaps.org compatible sitemap for your site.
 
 # Contributing
-Bug reports and pull requests are welcome on GitHub at [https://github.com/jasongaylord/SpaacedOut].
+Bug reports and pull requests are welcome on GitHub at [https://github.com/jasongaylord/SpaacedOut](https://jasong.us/2ywUm3C).
 
 # Development
 I've blogged about getting started with themes and Jekyl. You can read more about it at [https://www.jasongaylord.com/blog/creating-a-jekyll-theme-from-windows](https://jasong.us/35luIer)
 
 # License
-The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+The theme is available as open source under the terms of the [MIT License](https://jasong.us/2zlpRh5).

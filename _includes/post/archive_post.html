@@ -3,8 +3,8 @@
 {% capture number %}{{ forloop.length }}{% endcapture %}
 {% unless year == this_year %}
 {% assign year = this_year %}
-{% unless forloop.first && forloop.length %}
-</ul> Length: {{ forloop.length }}
+{% unless forloop.first %}
+</ul> 
 {% endunless %}
 <h2 class="year">{{ date | date: "%Y" }}</h2>
 <ul>

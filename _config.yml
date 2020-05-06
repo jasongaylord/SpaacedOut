@@ -21,6 +21,12 @@ permalink: /blog/:year/:month/:day/:title
 
 # content expansion
 content:
+  head-s: false
+#  header-s: false
+# Since GitHub Pages targets Jekyll 3.8 and not Jekyll 4, we are limited on loading includes in
+# dynamically. Hopefully they change it in the future. So, the commented out blocks below are 
+# for future usage. Since they'll never be true, the Jekyll processor will skip these. If
+# and when these are allowed, I'll post in the Theme README how to safely "upgrade."
 #  head-suffix: head-suffix.html  
 #  header-suffix: header-suffix.html
 

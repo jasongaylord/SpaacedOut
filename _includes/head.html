@@ -10,7 +10,10 @@
     {% if jekyll.environment == 'production' and site.google_analytics %}
       {% include head/google-analytics.html %}
     {% endif %}
-    {% if site.content.header-suffix %}
+    {% if site.content.head-s %}
+      {% include head-suffix.html %}
+    {% endif %}
+    {% if site.content.head-suffix %}
       {% include {{ site.content.head-suffix }} %}
     {% endif %}
   </head>

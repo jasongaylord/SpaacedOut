@@ -8,6 +8,9 @@
         {{ site.subtitle }}
     </div>
     {% endif %}
+    {% if site.content.header-s %}
+      {% include header-suffix.html %}
+    {% endif %}
     {% if site.content.header-suffix %}
       {% include {{ site.content.header-suffix }} %}
     {% endif %}

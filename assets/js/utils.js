@@ -42,7 +42,7 @@ var SpaacedOut = (function() {
             if (l.length > 1) {
               var lang = l[1].split(" ");
               if (lang.length > 0) {
-                i.setAttribute("data-lang", lang);
+                i.setAttribute("data-lang", lang[0]);
               }
             }
             //1 < l.length && (l = l[1].split(" "[0], i.setAttribute("data-lang", l)));

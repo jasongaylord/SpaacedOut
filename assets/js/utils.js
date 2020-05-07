@@ -53,13 +53,7 @@ var SpaacedOut = (function() {
           if (menuToggle) {
             menuToggle.addEventListener('click', function(e){
               document.body.classList.toggle('menu--opened');
-              if (menuToggle.getElementsByClassName('fa-bars')[0].style.visibility == "hidden") {
-                menuToggle.getElementsByClassName('fa-bars')[0].style.visibility = "visible";
-                menuToggle.getElementsByClassName('fa-times')[0].style.visibility = "hidden";
-              } else {
-                menuToggle.getElementsByClassName('fa-bars')[0].style.visibility = "hidden";
-                menuToggle.getElementsByClassName('fa-times')[0].style.visibility = "visible";
-              }
+              SpaacedOut.menuToggleIcon();
               e.preventDefault();
             },false);
             document.body.classList.remove('menu--opened');
@@ -69,6 +63,19 @@ var SpaacedOut = (function() {
                 document.body.classList.remove('menu--opened');
               }
             }, true);
+          }
+        },
+        menuToggleIcon: function() {
+          if (document.body.classList.contains('menu--opened')) {
+            menuToggle.getElementsByClassName('fa-bars')[0].style.display = "none";
+            menuToggle.getElementsByClassName('fa-bars')[0].style.visibility = "hidden";
+            menuToggle.getElementsByClassName('fa-times')[0].style.display = "block";
+            menuToggle.getElementsByClassName('fa-times')[0].style.visibility = "visible";
+          } else {
+            menuToggle.getElementsByClassName('fa-bars')[0].style.display = "block";
+            menuToggle.getElementsByClassName('fa-bars')[0].style.visibility = "visible";
+            menuToggle.getElementsByClassName('fa-times')[0].style.display = "none";
+            menuToggle.getElementsByClassName('fa-times')[0].style.visibility = "hidden";
           }
         }
     };
@@ -92,4 +99,5 @@ var SpaacedOut = (function() {
     }
     SpaacedOut.codeIdentity();
     SpaacedOut.setupMenuToggle();
+    SpaacedOut.menuToggleIcon();
 })

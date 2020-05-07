@@ -66,6 +66,7 @@ var SpaacedOut = (function() {
           }
         },
         menuToggleIcon: function() {
+          var menuToggle = document.getElementById('menu-toggle');
           if (document.body.classList.contains('menu--opened')) {
             menuToggle.getElementsByClassName('fa-bars')[0].style.display = "none";
             menuToggle.getElementsByClassName('fa-bars')[0].style.visibility = "hidden";

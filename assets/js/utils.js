@@ -53,6 +53,13 @@ var SpaacedOut = (function() {
           if (menuToggle) {
             menuToggle.addEventListener('click', function(e){
               document.body.classList.toggle('menu--opened');
+              if (menuToggle.getElementsByClassName('fa-bars')[0].style.visibility == "hidden") {
+                menuToggle.getElementsByClassName('fa-bars')[0].style.visibility = "visible";
+                menuToggle.getElementsByClassName('fa-times')[0].style.visibility = "hidden";
+              } else {
+                menuToggle.getElementsByClassName('fa-bars')[0].style.visibility = "hidden";
+                menuToggle.getElementsByClassName('fa-times')[0].style.visibility = "visible";
+              }
               e.preventDefault();
             },false);
             document.body.classList.remove('menu--opened');

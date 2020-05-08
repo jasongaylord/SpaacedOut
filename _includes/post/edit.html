@@ -3,8 +3,8 @@
 {% else %}
   {% assign path = page.path %}
 {% endif %}
-{% assign git_host = site.git.host | default: 'https://github.com/' }
-{% assign git_repo = site.git.repo | default: site.github.repository_url %}
+{% assign git_host = site.git.host | default: 'https://github.com' }
+{% assign git_repo = site.git.repo | default: site.github.repository_url | default: 'jekyll' %}
 {% assign git_branch = site.git.branch | default: site.github.source.branch | default: 'gh-pages' %}
 
-<a href="{{ git_host }}{{ git_repo }}/edit/{{ git_branch }}/{{ path }}" target="_blank">suggest edit</a>
+<a href="{{ git_host }}/{{ git_repo }}/edit/{{ git_branch }}/{{ path }}" target="_blank">suggest edit</a>

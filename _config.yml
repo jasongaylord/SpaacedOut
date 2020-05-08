@@ -6,7 +6,7 @@ description: >
   data on the site and in the feed.xml site description.
 
 # git edit capabilities
-base_url: /JasonGaylord.com
+baseurl: /JasonGaylord.com
 remote_theme: jasongaylord/SpaacedOut
 git:
 #  host: https://github.com/

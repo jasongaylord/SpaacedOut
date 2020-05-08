@@ -10,7 +10,7 @@
 <ul>
     {% endunless %}
     <li>
-        <a href="{{ site.base_url }}{{ post.url }}">{{post.title}}</a>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
         <div class="meta">
             {% if site.comments.enabled and site.comments.show_count == true %}
             {% include comments/comments_link.html %}

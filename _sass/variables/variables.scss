@@ -1,4 +1,4 @@
-$baseurl: '' !default;
+$baseurl: '{{ site.base_url }}' !default;
 $transition-time: 0.3s !default;
 
 // Fonts

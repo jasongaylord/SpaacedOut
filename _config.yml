@@ -47,7 +47,9 @@ social:
 #  twitter: jekyllrb
 #  youtube: jekyll
 
-#  google_analytics: UA-NNNNNNNN-N
+google:
+#  analytics: UA-NNNNNNNN-N
+#  adsense: ca-pub-NNNNNNNNNNNNNNNN
 
 rss: rss
 # The site generates a feed at /feed.xml. Uncomment below to override

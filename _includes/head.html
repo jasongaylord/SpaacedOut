@@ -7,8 +7,11 @@
     {% if site.twitter_username %}{% include head/twitter.html %}{% endif %}
     {% include head/stylesheets.html %}
     <script src="{{ '/assets/js/utils.js' | relative_url }}"></script>
-    {% if jekyll.environment == 'production' and site.google_analytics %}
+    {% if jekyll.environment == 'production' and site.google.analytics %}
       {% include head/google-analytics.html %}
+    {% endif %}
+    {% if jekyll.environment == 'production' and site.google.adsense %}
+      {% include head/google-adsense.html %}
     {% endif %}
     {% if site.content.head-s %}
       {% include head-suffix.html %}

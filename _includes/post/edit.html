@@ -4,7 +4,7 @@
   {% assign path = page.path %}
 {% endif %}
 {% assign git_host = site.git.host | default: 'https://github.com/' }
-{% assign git_repo = site.repository | default: site.github.repository_url %}
-{% assign git_branch = site.repository_branch | default: site.github.source.branch | default: 'gh-pages' %}
+{% assign git_repo = site.git.repository | default: site.github.repository_url %}
+{% assign git_branch = site.git.branch | default: site.github.source.branch | default: 'gh-pages' %}
 
 <a href="{{ git_host }}{{ git_repo }}/edit/{{ git_branch }}/{{ path }}" target="_blank">suggest edit</a>

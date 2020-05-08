@@ -83,9 +83,9 @@ var SpaacedOut = (function() {
           var postContent = document.getElementsByClassName("post-content");
           if (postContent.length > 0) {
             var links = document.getElementsByClassName("post-content")[0].getElementsByTagName("a");
-            links.forEach(link => {
+            for (var link of links) {
               link.setAttribute("target", "_blank");
-            });
+            }
           }
         }
     };

@@ -13,7 +13,7 @@
         <a href="{{ post.url }}">{{post.title}}</a>
         <div class="meta">
             {% if site.comments.enabled and site.comments.show_count == true %}
-            {% include post/comments_link.html %}
+            {% include comments/comments_link.html %}
             {% endif %}
         </div>
     </li>

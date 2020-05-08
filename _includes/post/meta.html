@@ -9,12 +9,12 @@
             </time>
             <span class="vertical-bar">|</span>
         </div>
+        {% if site.comments.enabled and site.comments.show_count == true %}
         <div class="meta-part">
-            {% if site.comments.enabled and site.comments.show_count == true %}
             {% include comments/comments_link.html %}
             <span class="vertical-bar">|</span>
-            {% endif %}
         </div>
+        {% endif %}
         <div class="meta-part">
             <i class="fas fa-pencil-alt"></i>
             <span class="edit">{% include post/edit.html %}</span>

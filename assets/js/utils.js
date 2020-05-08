@@ -78,6 +78,15 @@ var SpaacedOut = (function() {
             menuToggle.getElementsByClassName('fa-times')[0].style.display = "none";
             menuToggle.getElementsByClassName('fa-times')[0].style.visibility = "hidden";
           }
+        },
+        setPostLinkTargetToBlank: function() {
+          var postContent = document.getElementsByClassName("post-content");
+          if (postContent.length > 0) {
+            var links = document.getElementsByClassName("post-content")[0].getElementsByTagName("a");
+            links.forEach(link => {
+              link.setAttribute("target", "_blank");
+            });
+          }
         }
     };
   })()
@@ -101,4 +110,5 @@ var SpaacedOut = (function() {
     SpaacedOut.codeIdentity();
     SpaacedOut.setupMenuToggle();
     SpaacedOut.menuToggleIcon();
+    SpaacedOut.setPostLinkTargetToBlank();
 })

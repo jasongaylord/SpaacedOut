@@ -9,7 +9,7 @@
     color: $color-post-meta;
 
     @media screen and (max-width: $media-breakpoint-sm-max) {
-        align-items: top;
+        align-items: normal;
     }
 
     .tags {
@@ -50,7 +50,7 @@
     .vertical-bar {
         font-family: $font-sans;
         font-weight: 900;
-        font-size: 1.3em;
+        font-size: 1.2em;
         margin: 0 10px;
         color: $color-lightgrey;
 

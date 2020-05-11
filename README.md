@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/SpaacedOut.svg)](https://badge.fury.io/rb/SpaacedOut)
+
 # Welcome to the SpaacedOut Jekyll Theme
 Here's a new, responsive GitHub Pages and Jekyll theme called SpaacedOut. You can see the full details of this theme at
 [jasongaylord/SpaacedOut](https://jasong.us/2ywUm3C). This theme is a mashup of the 2019 version of [JasonGaylord.com](https://jasong.us/2SHDm1C), the [Haacked theme](https://jasong.us/2SItEvN), and the [plainwhite theme](https://jasong.us/2WxMoPJ).

@@ -31,10 +31,11 @@ include_nav: false
 
 {% assign tags = site.tags %}
 
+<div class="tag_page">
 {% for tag in tags %}
   {% assign tagname = tag | first | slugify %}
 <div id="{{ tagname }}" class="tag">
-  <h2>{{ tagname }} Posts</h2>
+  <h2>#{{ tagname }} Posts</h2>
   {% assign posts = tag[1] %}
   <ul>
   {% for post in posts %}
@@ -45,3 +46,4 @@ include_nav: false
   </ul>
 </div>
 {% endfor %}
+</div>

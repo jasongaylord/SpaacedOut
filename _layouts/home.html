@@ -1,13 +1,14 @@
 ---
 layout: default
 ---
-<div class="home">
+
+{{ content }}
+<div class="wrapper">
+  <div class="home">
     {% if page.title %}
     <h1 class="page-heading">{{ page.title }}</h1>
     {% endif %}
-  
-    {{ content }}
-  
+
     {% if site.posts.size > 0 %}
       <div class="posts-list">
         {% for post in paginator.posts %}
@@ -36,3 +37,4 @@ layout: default
       {% include pagination.html %}
     {% endif %}
   </div>
+</div>

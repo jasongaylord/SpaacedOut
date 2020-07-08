@@ -1,4 +1,4 @@
 {% assign tags = page.tags | default: post.tags %}
 {% for tag in tags %}
-  <li><a href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }}</a></li>
+  <li><a href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}" aria-label="{{ tag }}">{{ tag }}</a></li>
 {% endfor %}

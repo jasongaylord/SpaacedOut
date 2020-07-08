@@ -1,8 +1,8 @@
 <header class="header">
     {% if site.contact.avatar-image %}
-    <a href="{{ "/" | relative_url }}"><img src="{{ site.contact.avatar-image }}" alt="{{ site.title | escape }}" class="site-avatar"></a>
+    <a href="{{ "/" | relative_url }}" title="{{ site.title | escape }}" aria-label="{{ site.title | escape }}"><img src="{{ site.contact.avatar-image }}" alt="{{ site.title | escape }}" class="site-avatar"></a>
     {% endif %}
-    <a href="{{ "/" | relative_url }}" class="site-title" rel="author">{{ site.title | escape }}</a>
+    <a href="{{ "/" | relative_url }}" class="site-title" rel="author" title="{{ site.title | escape }}" aria-label="{{ site.title | escape }}">{{ site.title | escape }}</a>
     {% if site.subtitle %}
     <div class="site-subtitle">
         {{ site.subtitle }}
@@ -26,11 +26,11 @@
               {% assign my_page = site.pages | where: "path", path | first %}
               {% if my_page.title or my_page.nav_title %}
               {% assign title = my_page.nav_title | default: my_page.title %}
-              <li><a class="nav-link" href="{{ my_page.url | relative_url }}">{{ title | escape }}</a></li>
+              <li><a class="nav-link" href="{{ my_page.url | relative_url }}" title="{{ title | escape }}" aria-label="{{ title | escape }}">{{ title | escape }}</a></li>
               {% endif %}
             {% endfor %}
             {% if site.contact.url %}
-            <li><a class="page-link" href="{{ site.contact.url }}">Contact</a></li>
+            <li><a class="page-link" href="{{ site.contact.url }}" title="Contact" aria-label="Contact">Contact</a></li>
             {% endif %}
           </ul>
         </nav>

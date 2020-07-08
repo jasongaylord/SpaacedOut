@@ -8,4 +8,4 @@
 {% assign git_repository = site.git.repository | default: site.github.repository_url | default: 'jekyll' %}
 {% assign git_branch = site.git.branch | default: site.github.source.branch | default: 'gh-pages' %}
 
-<a href="{{ git_host }}{{ git_owner }}//{{ git_repository }}/edit/{{ git_branch }}/{{ path }}" target="_blank">suggest edit</a>
+<a href="{{ git_host }}{{ git_owner }}//{{ git_repository }}/edit/{{ git_branch }}/{{ path }}" target="_blank" title="Suggest an edit" aria-label="Suggest an edit">suggest edit</a>

@@ -14,7 +14,7 @@ layout: default
         {% for post in paginator.posts %}
         {% unless post.redirect %}
         <header class="post-header">
-          <h1 class="post-title p-name" itemprop="name headline"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | escape }}</a></h1>
+          <h1 class="post-title p-name" itemprop="name headline"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape }}" aria-label="{{ post.title | escape }}">{{ post.title | escape }}</a></h1>
           {% include post/meta.html %}
         </header>
       
@@ -25,7 +25,7 @@ layout: default
               <img src="{{post.excerpt_image }}" />
               {% endif %}
               {{ post.excerpt }}
-              <a href="{{ post.url }}" class="read-more">Read More</a>
+              <a href="{{ post.url }}" class="read-more" title="Read more about {{ post.title }}" aria-label="Read more about {{ post.title }}">Read More</a>
             </div>
           {% else %}
             {{ post.content }}

@@ -40,7 +40,7 @@ include_nav: false
   <ul>
   {% for post in posts %}
     <li>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" title="{{post.title}}" aria-label="{{post.title}}">{{post.title}}</a>
     </li>
   {% endfor %}
   </ul>

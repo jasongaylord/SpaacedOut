@@ -84,7 +84,7 @@ var SpaacedOut = (function() {
           if (postContent.length > 0) {
             var links = postContent[0].getElementsByTagName("a");
             for (var link of links) {
-              if (link.hash.length() == 0) {
+              if (link.hash.length == 0) {
                 link.setAttribute("target", "_blank");
                 link.setAttribute("rel", "noopener");
               }

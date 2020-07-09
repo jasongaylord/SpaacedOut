@@ -1,4 +1,4 @@
-[![Gem Version](https://badge.fury.io/rb/SpaacedOut.svg)](https://badge.fury.io/rb/SpaacedOut)
+[![Gem Version](https://badge.fury.io/rb/spaacedout.svg)](https://badge.fury.io/rb/spaacedout)
 
 # Welcome to the SpaacedOut Jekyll Theme
 Here's a new, responsive GitHub Pages and Jekyll theme called SpaacedOut. You can see the full details of this theme at

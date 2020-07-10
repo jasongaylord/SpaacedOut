@@ -125,7 +125,18 @@ The following plugins are installed in the *SpaceOut* theme:
 Bug reports and pull requests are welcome on GitHub at [https://github.com/jasongaylord/SpaacedOut](https://jasong.us/2ywUm3C).
 
 # Development
-I've blogged about getting started with themes and Jekyl. You can read more about it at [https://www.jasongaylord.com/blog/creating-a-jekyll-theme-from-windows](https://jasong.us/35luIer)
+I've blogged about getting started with themes and Jekyll. You can read more about it at [https://www.jasongaylord.com/blog/creating-a-jekyll-theme-from-windows](https://jasong.us/35luIer)
 
 # License
 The theme is available as open source under the terms of the [MIT License](https://jasong.us/2zlpRh5).
+
+# Change Log
+The changes made since version 1.x are documented below.
+
+## Version 1.1.x - July 9, 2020
+- FEATURE: Added the appropriate attributes to links for better accessibility and best practices for security. This will be reflected in a Google Lighthouse score.
+- FEATURE: Updated the script that opens links in a new window to look for links that direct users to another area of a same page (`hash` link) so they don't open in a new window.
+
+## Version 1.0.x - May 15, 2020
+- BUG: Updated the tags page so the tags can be clicked
+- BUG: Updated the issues with the pager so the first page could be browsed correctly and mobile works.

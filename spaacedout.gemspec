@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "spaacedout"
-  spec.version       = "1.1.2"
+  spec.version       = "1.1.3"
   spec.authors       = ["Jason Gaylord"]
   spec.email         = ["jason@jasongaylord.com"]
 

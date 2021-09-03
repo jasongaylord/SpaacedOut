@@ -3,12 +3,12 @@ blockquote.notice {
     padding: 10px;
     border-radius: 5px;
 
-    &.info {
+    .info {
         border: 1px solid $color-lightblue;
         background-color: lighten($color-lightblue, 30%);
         color: darken($color-lightblue, 30%);
     }
-    &.warning {
+    .warning {
         border: 1px solid $color-red;
         background-color: lighten($color-red, 30%);
         color: darken($color-red, 30%);

@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "spaacedout"
-  spec.version       = "1.1.3"
+  spec.version       = "1.2.0"
   spec.authors       = ["Jason Gaylord"]
   spec.email         = ["jason@jasongaylord.com"]
 
@@ -19,6 +19,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1.0"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.6.1"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4.0"
-  spec.add_development_dependency "bundler", "~> 2.0.4"
+  spec.add_development_dependency "bundler", "~> 2.2.10"
   spec.add_development_dependency "rake", "~> 13.0.1"
 end

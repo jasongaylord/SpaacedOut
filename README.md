@@ -2,7 +2,7 @@
 
 # Welcome to the SpaacedOut Jekyll Theme
 Here's a new, responsive GitHub Pages and Jekyll theme called SpaacedOut. You can see the full details of this theme at
-[jasongaylord/SpaacedOut](https://jasong.us/2ywUm3C). This theme is a mashup of the 2019 version of [JasonGaylord.com](https://jasong.us/2SHDm1C), the [Haacked theme](https://jasong.us/2SItEvN), and the [plainwhite theme](https://jasong.us/2WxMoPJ).
+[jasongaylord/SpaacedOut](https://jasong.us/2ywUm3C). This theme is a mashup of the 2019 version of [JasonGaylord.com](https://jasong.us/2SHDm1C), the [Haacked theme](https://jasong.us/2Zt4yaX), and the [plainwhite theme](https://jasong.us/2WxMoPJ).
 
 This theme has several features enabled by default:
 
@@ -132,6 +132,9 @@ The theme is available as open source under the terms of the [MIT License](https
 
 # Change Log
 The changes made since version 1.x are documented below.
+
+## Version 1.2.x - October 24, 2021
+- BUG: Updated the tags and archive titles to "smartify" the quotes when used as a title
 
 ## Version 1.1.x - July 9, 2020
 - FEATURE: Added the appropriate attributes to links for better accessibility and best practices for security. This will be reflected in a Google Lighthouse score.

@@ -10,7 +10,7 @@
 <ul>
     {% endunless %}
     <li>
-        <a href="{{ site.baseurl }}{{ post.url }}" title="{{post.title}}" aria-label="{{post.title}}">{{post.title}}</a>
+        <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title | smartify }}" aria-label="{{ post.title | smartify }}">{{ post.title | smartify }}</a>
         <div class="meta">
             {% if site.comments.enabled and site.comments.show_count == true %}
             {% include comments/comments_link.html %}

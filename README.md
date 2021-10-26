@@ -133,8 +133,9 @@ The theme is available as open source under the terms of the [MIT License](https
 # Change Log
 The changes made since version 1.x are documented below.
 
-## Version 1.2.x - October 24, 2021
+## Version 1.2.x - October 26, 2021
 - BUG: Updated the tags and archive titles to "smartify" the quotes when used as a title
+- FEATURE: Include the version in the footer
 
 ## Version 1.1.x - July 9, 2020
 - FEATURE: Added the appropriate attributes to links for better accessibility and best practices for security. This will be reflected in a Google Lighthouse score.

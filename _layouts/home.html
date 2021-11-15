@@ -14,7 +14,7 @@ layout: default
         {% for post in paginator.posts %}
         {% unless post.redirect %}
         <header class="post-header">
-          <h1 class="post-title p-name" itemprop="name headline"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape }}" aria-label="{{ post.title | escape }}">{{ post.title | escape }}</a></h1>
+          <h3 class="post-title p-name" itemprop="name headline"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape }}" aria-label="{{ post.title | escape }}">{{ post.title | escape }}</a></h3>
           {% include post/meta.html %}
         </header>
       

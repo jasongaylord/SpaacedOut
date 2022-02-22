@@ -87,6 +87,7 @@ The files mentioned below can be found in the `_includes` directory. Includes ar
   - `twitter.html` - If the Twitter social icon is defined, this places a Twitter card on the site.
 - `header.html` - This is the header section of the site and includes the title, avatar, menu, and social icons (if present).
 - `pagination.html` - This handles the pagination of posts.
+- `scripts.html` - This contains scripts you'd like to place at the bottom of the page below the `body` tag.
 - `social-links.html` - This handles the display of the social links.
 - `_includes\comments` directory:
   - `comments.html` - Used to reference the comment block at the bottom of content. If you want to expand beyond disqus, this is where you could do it.

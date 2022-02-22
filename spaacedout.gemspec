@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "spaacedout"
-  spec.version       = "1.2.7" #update in includes\version.html as well
+  spec.version       = "1.3.0" #update in includes\version.html as well
   spec.authors       = ["Jason Gaylord"]
   spec.email         = ["jason@jasongaylord.com"]
 

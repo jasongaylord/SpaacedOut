@@ -133,6 +133,9 @@ The theme is available as open source under the terms of the [MIT License](https
 # Change Log
 The changes made since version 1.x are documented below.
 
+## Version 1.3.x - February 2, 2022
+- FEATURE: Added a new `scripts.html` include to include files at the bottom right below the ending `body` tag.
+
 ## Version 1.2.x - October 26, 2021
 - BUG: Updated the tags and archive titles to "smartify" the quotes when used as a title
 - FEATURE: Include the version in the footer

@@ -43,7 +43,8 @@ social:
 #  github: jekyll
 #  instagram: jekyll
 #  linkedin: jekyll
-#  mastodon: https://tech.social/@jekyll
+#  mastodonUser: jekyll
+#  mastodonServer: tech.social
 #  pinterest: jekyll
 #  stackoverflow: "11111"
 #  twitter: jekyllrb

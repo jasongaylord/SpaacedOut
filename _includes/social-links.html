@@ -1,4 +1,5 @@
 <ul class="social-media-list">
+    {% if site.social.bluesky %}<li><a href="https://bsky.app/profile/{{ site.social.bluesky | cgi_escape | escape }}" target="_blank" title="Bluesky" aria-label="Bluesky"><i class="fas fa-clouds-sun" rel="noopener"></i></a></li>{% endif %}
     {% if site.social.facebook %}<li><a href="https://www.facebook.com/{{ site.social.facebook | cgi_escape | escape }}" target="_blank" title="Facebook" aria-label="Facebook" rel="noopener"><i class="fab fa-facebook"></i></a></li>{% endif %}
     {% if site.social.github %}<li><a href="https://github.com/{{ site.social.github | cgi_escape | escape }}" target="_blank" title="GitHub" aria-label="GitHub" rel="noopener"><i class="fab fa-github"></i></a></li>{% endif %}
     {% if site.social.instagram %}<li><a href="https://instagram.com/{{ site.social.instagram | cgi_escape | escape }}" target="_blank" title="Instagram" aria-label="Instagram" rel="noopener"><i class="fab fa-instagram"></i></a></li>{% endif %}
@@ -6,7 +7,8 @@
     {% if site.social.mastodonServer %}<li><a href="https://{{ site.social.mastodonServer | cgi_escape | escape }}/@{{ site.social.mastodonUser | cgi_escape | escape }}" target="_blank" title="Mastodon" aria-label="Mastodon" rel="me"><i class="fab fa-mastodon"></i></a></li>{% endif %}
     {% if site.social.pinterest %}<li><a href="https://www.pinterest.com/{{ site.social.pinterest | cgi_escape | escape }}" target="_blank" title="Pinterest" aria-label="Pinterest" rel="noopener"><i class="fab fa-pinterest"></i></a></li>{% endif %}
     {% if site.social.stackoverflow %}<li><a href="https://stackoverflow.com/users/{{ site.social.stackoverflow | cgi_escape | escape }}/" target="_blank" title="Stack Overflow" aria-label="Stack Overflow" rel="noopener"><i class="fab fa-stack-overflow"></i></a></li>{% endif %}
-    {% if site.social.twitter %}<li><a href="https://twitter.com/{{ site.social.twitter | cgi_escape | escape }}" target="_blank" title="Twitter" aria-label="Twitter"><i class="fab fa-twitter" rel="noopener"></i></a></li>{% endif %}
+    {% if site.social.threads %}<li><a href="https://threads.net/{{ site.social.threads | cgi_escape | escape }}" target="_blank" title="Threads" aria-label="Threads" rel="noopener"><i class="fab fa-threads"></i></a></li>{% endif %}
+    {% if site.social.twitter %}<li><a href="https://twitter.com/{{ site.social.twitter | cgi_escape | escape }}" target="_blank" title="Twitter" aria-label="Twitter"><i class="fab fa-x-twitter" rel="noopener"></i></a></li>{% endif %}
     {% if site.social.youtube %}<li><a href="https://youtube.com/{{ site.social.youtube | cgi_escape | escape }}" target="_blank" title="Youtube" aria-label="Youtube"><i class="fab fa-youtube" rel="noopener"></i></a></li>{% endif %}
     {% if site.rss %}<li><a href="{{ site.feed.url | '/feed.xml' }}" target="_blank" title="RSS" aria-label="RSS" rel="noopener"><i class="fas fa-rss"></i></a></li>{% endif %}
 </ul>

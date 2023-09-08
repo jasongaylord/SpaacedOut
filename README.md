@@ -134,9 +134,10 @@ The theme is available as open source under the terms of the [MIT License](https
 # Change Log
 The changes made since version 1.x are documented below.
 
-## Version 1.3.x - February 17, 2023
-- FEATURE: Added support of Mastodon in the social icons section.
+## Version 1.3.x - February 17, 2023 (Revised September, 8, 2023)
+- FEATURE: Added support of Bluesky, Mastodon and Threads in the social icons section.
 - FEATURE: Added a new `scripts.html` include to include files at the bottom right below the ending `body` tag.
+- BUG: Updated the Twitter icon to X.
 - BUG: Updated Font Awesome to version 6.
 
 ## Version 1.2.x - October 26, 2021
